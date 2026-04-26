@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+*.png
+*.jpg
+browser-profile/
+.pytest_cache/
+.venv/
+venv/
+
