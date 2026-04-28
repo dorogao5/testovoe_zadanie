@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 import json
 from types import SimpleNamespace
 
@@ -44,6 +45,11 @@ class _CapturingClient:
 class _NoToolClient:
     async def complete(self, request: LLMRequest):
         return LLMResponse(content="I cannot approve this yet.", tool_calls=[])
+
+
+class _HangingClient:
+    async def complete(self, request: LLMRequest):
+        await asyncio.Event().wait()
 
 
 class _Logger:
@@ -235,6 +241,35 @@ async def test_success_verification_without_tool_rejects_completion(tmp_path) ->
     assert not verified.success
     assert "did not return an explicit done approval" in verified.summary
     assert "Continue the browser task" in verified.remaining_risks[0]
+
+
+@pytest.mark.asyncio
+async def test_success_verification_timeout_rejects_without_hanging(tmp_path) -> None:
+    config = AgentConfig(
+        provider="kimi",
+        max_steps=10,
+        final_verification_timeout_seconds=0.01,
+    )
+    logger = _Logger()
+    core = AgentCore(
+        config=config,
+        run_id="r1",
+        run_dir=tmp_path,
+        cascade=ModelCascade(client=_HangingClient(), config=config),
+        tools=_Tools(),
+        logger=logger,
+        context=ContextManager(),
+    )
+    core.token_limiter = TokenRateLimiter(limit_per_minute=0)
+    state = AgentState(task="Find jobs", run_id="r1", step=5)
+    proposed = FinalResult(success=True, summary="Found jobs", evidence=["visible jobs"])
+
+    verified = await core._verify_final_with_strong(state, proposed)
+
+    assert not verified.success
+    assert "Strong verification failed" in verified.summary
+    assert "TimeoutError" in verified.summary
+    assert any(event["type"] == "model_error" for event in logger.events)
 
 
 @pytest.mark.asyncio

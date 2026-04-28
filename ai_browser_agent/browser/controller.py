@@ -121,10 +121,16 @@ class BrowserController:
                 except Exception:
                     pass
             if not self._connected_over_cdp:
-                await self.context.close()
+                try:
+                    await asyncio.wait_for(self.context.close(), timeout=10)
+                except Exception:
+                    pass
             self.context = None
         if self.playwright is not None:
-            await self.playwright.stop()
+            try:
+                await asyncio.wait_for(self.playwright.stop(), timeout=10)
+            except Exception:
+                pass
             self.playwright = None
         self._connected_over_cdp = False
         self.page = None

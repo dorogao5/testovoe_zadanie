@@ -786,9 +786,10 @@ class AgentCore:
             ],
             tools=done_tools,
             model=self.config.strong_model,
+            max_tokens=1024,
             prompt_cache_key=self._prompt_cache_key(),
             safety_identifier=self._safety_identifier(),
-            thinking=self._thinking_mode(ModelRole.strong),
+            thinking="disabled" if self.config.provider == "kimi" else self._thinking_mode(ModelRole.strong),
         )
         self.logger.event(
             "verification",
@@ -809,7 +810,10 @@ class AgentCore:
                 estimated_tokens=estimated_tokens,
                 reserved_tokens=throttled_tokens,
             )
-            response = await self.cascade.complete(request, role=ModelRole.strong)
+            response = await asyncio.wait_for(
+                self.cascade.complete(request, role=ModelRole.strong),
+                timeout=self.config.final_verification_timeout_seconds,
+            )
         except Exception as exc:
             self.logger.event(
                 "model_error",

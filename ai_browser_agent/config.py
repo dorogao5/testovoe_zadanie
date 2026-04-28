@@ -72,6 +72,7 @@ class AgentConfig:
     kimi_base_url: str = DEFAULT_KIMI_BASE_URL
     kimi_thinking: str = "disabled"
     kimi_strong_thinking: str = "enabled"
+    final_verification_timeout_seconds: float = 45.0
     prompt_cache_key: str | None = None
     safety_identifier: str | None = None
 
@@ -119,6 +120,12 @@ class AgentConfig:
             )
             .strip()
             .lower(),
+            final_verification_timeout_seconds=float(
+                os.getenv(
+                    "AI_BROWSER_FINAL_VERIFICATION_TIMEOUT_SECONDS",
+                    str(cls.final_verification_timeout_seconds),
+                )
+            ),
             prompt_cache_key=os.getenv("AI_BROWSER_PROMPT_CACHE_KEY") or None,
             safety_identifier=os.getenv("AI_BROWSER_SAFETY_IDENTIFIER") or None,
         )
@@ -169,6 +176,7 @@ class AgentConfig:
             kimi_base_url=self.kimi_base_url,
             kimi_thinking=self.kimi_thinking,
             kimi_strong_thinking=self.kimi_strong_thinking,
+            final_verification_timeout_seconds=self.final_verification_timeout_seconds,
             prompt_cache_key=self.prompt_cache_key,
             safety_identifier=self.safety_identifier,
         )
