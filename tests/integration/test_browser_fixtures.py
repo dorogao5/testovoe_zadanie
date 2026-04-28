@@ -161,6 +161,55 @@ async def test_stale_ref_recovery_after_dom_rerender(tmp_path) -> None:
         await browser.close()
 
 
+@pytest.mark.asyncio
+async def test_scroll_moves_nested_scrollable_panel(tmp_path) -> None:
+    browser = BrowserController(artifacts_dir=tmp_path / "run", viewport={"width": 800, "height": 600})
+    await browser.launch(tmp_path / "profile", headless=True)
+    try:
+        page = browser._require_page()
+        await page.set_content(
+            """
+            <main>
+              <section aria-label="Job results" style="height: 180px; overflow-y: auto; border: 1px solid black">
+                <a href="#1">Python Developer 1</a>
+                <div style="height: 120px"></div>
+                <a href="#2">Python Developer 2</a>
+                <div style="height: 120px"></div>
+                <a href="#3">Python Developer 3</a>
+                <div style="height: 120px"></div>
+                <a href="#4">Python Developer 4</a>
+              </section>
+            </main>
+            """
+        )
+        await browser.current_state(SnapshotMode.visible)
+
+        result = await browser.scroll("down", amount=140)
+
+        assert result.ok
+        assert result.data["method"] in {"wheel", "dom"}
+        assert await page.locator("section").evaluate("(el) => el.scrollTop") > 0
+    finally:
+        await browser.close()
+
+
+@pytest.mark.asyncio
+async def test_scroll_reports_no_movement_at_boundary(tmp_path) -> None:
+    browser = BrowserController(artifacts_dir=tmp_path / "run", viewport={"width": 800, "height": 600})
+    await browser.launch(tmp_path / "profile", headless=True)
+    try:
+        page = browser._require_page()
+        await page.set_content("<main><p>No scrolling here</p></main>")
+
+        result = await browser.scroll("down", amount=140)
+
+        assert not result.ok
+        assert result.error is not None
+        assert result.error.error_class == "scroll_no_movement"
+    finally:
+        await browser.close()
+
+
 def test_browser_controller_treats_extension_onboarding_pages_as_noise(tmp_path) -> None:
     browser = BrowserController(artifacts_dir=tmp_path / "run")
 

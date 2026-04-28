@@ -32,6 +32,7 @@ profiles/
 playwright-report/
 test-results/
 *.webm
+*.mov
 *.trace
 trace.zip
 

@@ -277,13 +277,41 @@ class BrowserController:
             "right": (amount, 0),
         }.get(direction, (0, amount))
         try:
+            before = await self._scroll_positions()
             if ref:
                 target = await self.resolver.resolve(page, ref)
                 if target.locator is not None:
                     await target.locator.hover(timeout=3000)
+                elif target.point is not None:
+                    await page.mouse.move(target.point[0], target.point[1])
+            else:
+                await page.mouse.move(self.viewport["width"] / 2, self.viewport["height"] / 2)
             await page.mouse.wheel(dx, dy)
-            await self.wait_for_stable(timeout_ms=1000)
-            return await self._action_ok(f"Scrolled {direction}", amount=amount)
+            await asyncio.sleep(0.15)
+            after = await self._scroll_positions()
+            if self._positions_changed(before, after):
+                await self.wait_for_stable(timeout_ms=1000)
+                return await self._action_ok(f"Scrolled {direction}", amount=amount, method="wheel")
+
+            dom_result = await self._dom_scroll(direction, amount=amount, ref=ref)
+            if dom_result.get("changed"):
+                await self.wait_for_stable(timeout_ms=1000)
+                return await self._action_ok(
+                    f"Scrolled {direction}",
+                    amount=amount,
+                    method="dom",
+                    scroll_target=dom_result.get("target"),
+                    before=dom_result.get("before"),
+                    after=dom_result.get("after"),
+                )
+            return BrowserActionResult.failure(
+                "scroll_no_movement",
+                (
+                    f"Scroll {direction} by {amount}px did not change the page or any visible "
+                    "scrollable container."
+                ),
+                "Try the opposite direction, provide a ref inside the scrollable panel, or observe again.",
+            )
         except Exception as exc:
             return self._action_error("scroll_failed", exc, "Try a smaller scroll or observe again.")
 
@@ -417,6 +445,154 @@ class BrowserController:
         await target.locator.select_option(value=value, timeout=self.action_timeout_ms)
         await self.wait_for_stable(timeout_ms=1500)
         return await self._action_ok(f"Selected option on {ref}", value=value)
+
+    async def _scroll_positions(self) -> dict[str, Any]:
+        page = self._require_page()
+        return await page.evaluate(
+            """
+            () => {
+              const root = document.scrollingElement || document.documentElement;
+              const containers = Array.from(document.querySelectorAll('*'))
+                .filter((el) => {
+                  const style = window.getComputedStyle(el);
+                  const rect = el.getBoundingClientRect();
+                  const canY = /(auto|scroll|overlay)/.test(style.overflowY) && el.scrollHeight > el.clientHeight + 1;
+                  const canX = /(auto|scroll|overlay)/.test(style.overflowX) && el.scrollWidth > el.clientWidth + 1;
+                  return (canY || canX) && rect.width > 0 && rect.height > 0 &&
+                    rect.bottom >= 0 && rect.right >= 0 &&
+                    rect.top <= window.innerHeight && rect.left <= window.innerWidth;
+                })
+                .slice(0, 40)
+                .map((el, index) => ({
+                  index,
+                  top: Math.round(el.scrollTop),
+                  left: Math.round(el.scrollLeft),
+                  maxTop: Math.max(0, Math.round(el.scrollHeight - el.clientHeight)),
+                  maxLeft: Math.max(0, Math.round(el.scrollWidth - el.clientWidth))
+                }));
+              return {
+                window: {
+                  top: Math.round(root.scrollTop || window.scrollY || 0),
+                  left: Math.round(root.scrollLeft || window.scrollX || 0),
+                  maxTop: Math.max(0, Math.round(root.scrollHeight - window.innerHeight)),
+                  maxLeft: Math.max(0, Math.round(root.scrollWidth - window.innerWidth))
+                },
+                containers
+              };
+            }
+            """
+        )
+
+    def _positions_changed(self, before: dict[str, Any], after: dict[str, Any]) -> bool:
+        before_window = before.get("window", {})
+        after_window = after.get("window", {})
+        if before_window.get("top") != after_window.get("top"):
+            return True
+        if before_window.get("left") != after_window.get("left"):
+            return True
+        before_containers = before.get("containers", [])
+        after_containers = after.get("containers", [])
+        for before_item, after_item in zip(before_containers, after_containers, strict=False):
+            if before_item.get("top") != after_item.get("top"):
+                return True
+            if before_item.get("left") != after_item.get("left"):
+                return True
+        return False
+
+    async def _dom_scroll(self, direction: str, *, amount: int, ref: str | None) -> dict[str, Any]:
+        page = self._require_page()
+        return await page.evaluate(
+            """
+            ({ direction, amount, ref }) => {
+              const root = document.scrollingElement || document.documentElement;
+              const vertical = direction === 'up' || direction === 'down';
+              const delta = (direction === 'up' || direction === 'left') ? -amount : amount;
+              const top = vertical ? delta : 0;
+              const left = vertical ? 0 : delta;
+
+              function visibleArea(el) {
+                const rect = el.getBoundingClientRect();
+                const width = Math.max(0, Math.min(rect.right, window.innerWidth) - Math.max(rect.left, 0));
+                const height = Math.max(0, Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0));
+                return width * height;
+              }
+
+              function canScroll(el) {
+                const maxTop = Math.max(0, el.scrollHeight - el.clientHeight);
+                const maxLeft = Math.max(0, el.scrollWidth - el.clientWidth);
+                if (vertical) {
+                  if (maxTop <= 1) return false;
+                  return delta < 0 ? el.scrollTop > 0 : el.scrollTop < maxTop;
+                }
+                if (maxLeft <= 1) return false;
+                return delta < 0 ? el.scrollLeft > 0 : el.scrollLeft < maxLeft;
+              }
+
+              function closestScrollable(el) {
+                for (let node = el; node && node !== document.body; node = node.parentElement) {
+                  if (canScroll(node)) return node;
+                }
+                return canScroll(root) ? root : null;
+              }
+
+              function bestVisibleScrollable() {
+                const candidates = Array.from(document.querySelectorAll('*'))
+                  .filter((el) => {
+                    const style = window.getComputedStyle(el);
+                    const overflow = vertical ? style.overflowY : style.overflowX;
+                    const rect = el.getBoundingClientRect();
+                    return /(auto|scroll|overlay)/.test(overflow) &&
+                      rect.width > 0 && rect.height > 0 &&
+                      rect.bottom >= 0 && rect.right >= 0 &&
+                      rect.top <= window.innerHeight && rect.left <= window.innerWidth &&
+                      canScroll(el);
+                  })
+                  .map((el) => ({ el, score: visibleArea(el) }))
+                  .sort((a, b) => b.score - a.score);
+                if (candidates.length) return candidates[0].el;
+                return canScroll(root) ? root : null;
+              }
+
+              const refEl = ref ? document.querySelector(`[data-ai-browser-ref="${CSS.escape(ref)}"]`) : null;
+              const target = refEl ? closestScrollable(refEl) : bestVisibleScrollable();
+              if (!target) {
+                return { changed: false, target: null, reason: 'no_scrollable_target' };
+              }
+
+              const before = {
+                top: Math.round(target.scrollTop),
+                left: Math.round(target.scrollLeft)
+              };
+              target.scrollBy({ top, left, behavior: 'instant' });
+              const after = {
+                top: Math.round(target.scrollTop),
+                left: Math.round(target.scrollLeft)
+              };
+              const changed = before.top !== after.top || before.left !== after.left;
+              const rect = target === root
+                ? { x: 0, y: 0, width: window.innerWidth, height: window.innerHeight }
+                : target.getBoundingClientRect();
+              return {
+                changed,
+                before,
+                after,
+                target: target === root ? 'window' : {
+                  tag: target.tagName.toLowerCase(),
+                  role: target.getAttribute('role'),
+                  aria_label: target.getAttribute('aria-label'),
+                  text: String(target.innerText || target.textContent || '').replace(/\\s+/g, ' ').trim().slice(0, 120),
+                  bbox: {
+                    x: Math.round(rect.x),
+                    y: Math.round(rect.y),
+                    width: Math.round(rect.width),
+                    height: Math.round(rect.height)
+                  }
+                }
+              };
+            }
+            """,
+            {"direction": direction, "amount": amount, "ref": ref},
+        )
 
     async def _recover_ref(self, old_element: Any | None) -> str | None:
         if old_element is None:
