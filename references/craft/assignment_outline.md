@@ -1,0 +1,112 @@
+- [text; pageRegular] Тестовое задание: AI-агент для автоматизации браузера
+  - [text; subtitle] Задача
+  - [text; body] Разработать AI-агента, который автономно управляет веб-браузером для выполнения сложных многошаговых задач.
+  - [text; subtitle] Требования к решению
+  - [text; body] Должен открываться браузер и должна быть возможность написать агенту (можно в отдельном окне или в терминале). Агенту можно отправить сложную задачу текстом и смотреть, как он решает её в браузере. Агент должен работать полностью автономно, пока не потребуется дополнительная информация от пользователя или задача не будет выполнена.
+  - [text; body] Вот примеры некоторых задач, с которыми должен справляться агент:
+  - [text; pageCard] ✉️ Удаление спама
+    - [text; subtitle] Цель
+    - [text; body] Прочитать последние письма в почте и удалить спам-письма.
+    - [text; subtitle] Пользовательский опыт
+    - [text; body] Пользователь пишет: "Прочитай последние 10 писем в яндекс почте и удали спам"
+    - [text; body] Агент должен:
+    - [text; body, list=numbered] Перейти в почтовый сервис
+    - [text; body, list=numbered] Открыть папку "Входящие"
+    - [text; body, list=numbered] Прочитать последние 10 писем (тема, отправитель, краткое содержание)
+    - [text; body, list=numbered] Проанализировать каждое письмо и определить спам (рекламные рассылки, подозрительные отправители, фишинг)
+    - [text; body, list=numbered] Удалить спам-письма (переместить в корзину или пометить как спам)
+    - [text; body, list=numbered] Предоставить пользователю краткий отчёт: сколько спама удалено, какие важные письма остались
+    - [text; body] Предполагается, что перед началом задачи пользователь уже вошёл в свой аккаунт на почтовом сервисе
+  - [text; pageCard] 🍔 Заказ еды
+    - [text; subtitle] Цель
+    - [text; body] Оформить заказ на сервисе доставки еды (Яндекс.Еда/Лавка, Delivery Club...)
+    - [text; subtitle] Пользовательский опыт
+    - [text; body] Пользователь пишет: "Закажи мне BBQ-бургер и картошку фри из того места, откуда я заказывал на прошлой неделе на сайте [...]"
+    - [text; body] Агент должен:
+    - [text; body, list=numbered] Перейти на сайт доставки еды
+    - [text; body, list=numbered] Найти нужный ресторан или найти BBQ-бургеры через поиск
+    - [text; body, list=numbered] Добавить правильные позиции в корзину (различать похожие товары)
+    - [text; body, list=numbered] Перейти к оформлению заказа
+    - [text; body, list=numbered] Пройти checkout (можно остановиться перед финальным подтверждением оплаты)
+    - [text; body] Предполагается, что перед началом задачи пользователь уже вошёл в свой аккаунт на сервисе заказа еды
+  - [text; pageCard] 💼 Поиск вакансий
+    - [text; subtitle] Цель
+    - [text; body] Найти релевантные вакансии и составить персонализированные сообщения для рекрутеров
+    - [text; subtitle] Пользовательский опыт
+    - [text; body] Пользователь пишет: "Найди 3 подъодящие вакансии AI-инженера на hh.ru и откликнись на них с сопроводительным, предварительно изучив резюме в моём профиле"
+    - [text; body] Агент должен:
+    - [text; body, list=numbered] Перейти на hh.ru
+    - [text; body, list=numbered] Изучить профиль юзера
+    - [text; body, list=numbered] Найти релевантные вакансии через поиск
+    - [text; body, list=numbered] Извлечь ключевую информацию о каждой позиции
+    - [text; body, list=numbered] Откликнуться на подходящие вакансии, приложив сопроводительное письмо
+    - [text; body] Предполагается, что перед началом задачи пользователь уже вошёл в свой аккаунт на hh.ru
+  - [text; subtitle] Что должно быть в реализации
+  - [text; body, list=toggle] Автоматизация браузера
+  - [text; body, list=bullet] Программное управление браузером
+  - [text; body, list=bullet] Поддержка persistent sessions (пользователь может войти вручную, агент продолжает работу)
+  - [text; body, list=bullet] Видимый браузер (не headless) — нам нужно видеть, как это работает
+  - [text; body, list=toggle] Автономный AI-агент
+  - [text; body, list=bullet] Использует модели Claude или OpenAI
+  - [text; body, list=bullet] Принимает решения без постоянного участия пользователя
+  - [text; body, list=bullet] Обрабатывает многошаговые задачи с переходами между страницами
+  - [text; body, list=toggle] Управление контекстом
+  - [text; body] Нельзя просто отправлять целые веб-страницы в контекст AI. Необходимо реализовать стратегии работы с ограничениями по токенам.
+  - [text; body, list=toggle] Продвинутые паттерны (как минимум один)
+  - [text; body, list=bullet] Sub-agent architecture — специализированные агенты для разных задач
+  - [text; body, list=bullet] Обработка ошибок — агент адаптируется при неудачных действиях
+  - [text; body, list=bullet] Security layer — спрашивает, перед тем как сделать деструктивное действие (оплатить корзину, удалить имейл)
+  - [text; subtitle] Чего не должно быть в реализации
+  - [text; body, list=bullet] Заготовки действий агента (например шаги по удалению спама или оформлению заказа). Агент должен уметь решать любую новую задачу, сам определять, что ему делать дальше в моменте, а не следовать заданному плану
+  - [text; body, list=bullet] Преднаписанные селекторы (например a[data-qa='vacancy']) — вместо этого агент должен сам определять, на что нажать и какой у этого элемента селектор
+  - [text; body, list=bullet] Подсказки для агента по ссылкам и элементам. Наприер, нельзя хардкодить, что страница с вакансиями — это /vacancies, или что для добавления в корзину надо нажимать на кнопку с текстом «Заказать». Агент должен додуматься до этого сам.
+  - [text; subtitle] Что можно выбрать самостоятельно
+  - [text; body, list=bullet] Библиотека для автоматизации браузера (Puppeteer? Playwright? Selenium? Другое?)
+  - [text; body, list=bullet] AI SDK (Anthropic? OpenAI? Прямые API-вызовы?)
+  - [text; body, list=bullet] Язык программирования
+  - [text; body, list=bullet] Как эффективно извлекать информацию со страницы
+  - [text; body, list=bullet] Архитектура tool/function calling
+  - [text; body, list=bullet] Как обрабатывать динамические страницы, попапы, формы
+  - [text; body, list=bullet] Использовать ли MCP
+  - [text; body] Мы хотим увидеть твой процесс исследования и технические решения.
+  - [text; subtitle] Результат
+  - [text; body] Запиши короткое видео, где видно как твой агент решает одну из сложных задач. Также прикрепи, пожалуйста, ссылку на репу с решением.
+  - [text; body, list=toggle] Как выглядит идеальное решение
+  - [text; body] Ребята, которым мы отправили оффер, присылали видео, на котором было видно как открыт браузер и терминал одновременно.
+  - [text; body] В терминале писали короткую задачу для агента и наблюдали, какие он вызывает инструменты и с какими аргументами. Агент исследовал страницу, нажимал на кнопки и вводил текст для решения задачи. Всё это было также одновременно видно в браузере. В конце работы агент делился результатам, что удалось сделать.
+  - [text; body] Вот скрины из видео работы кандидата, который получил оффер:
+  - [image; body, image=https://secure-res.craft.do/v2/HsLVmZmMy9hkUuR8yYrFHMvfLJTYfHtWjmpfhJzsigVPTpyMxu3QJStn6WCMSThvmdSmLqixc4d8UqLbxbF3imVB1q24T4sqv2N5NNyyZkUYLsTjUp98u39JJ1xaeJJB1u6FSicWxpctnktZtVqUBM3Aty8g4QKEopjRn2GYh9HNZxbJqejoFwEYT5rejkL2Bmomo3vyQkeJ7ewCyNgXciAeRsQhbHarmy234Arymbs6yjwzZ8mqJJrLHMVAeGJFP3r88j6B76TmvvX857VC2sbFQLYp1iXCeiLUbm83a3BEHgoY7V/Image.jpg] https://secure-res.craft.do/v2/HsLVmZmMy9hkUuR8yYrFHMvfLJTYfHtWjmpfhJzsigVPTpyMxu3QJStn6WCMSThvmdSmLqixc4d8UqLbxbF3imVB1q24T4sqv2N5NNyyZkUYLsTjUp98u39JJ1xaeJJB1u6FSicWxpctnktZtVqUBM3Aty8g4QKEopjRn2GYh9HNZxbJqejoFwEYT5rejkL2Bmomo3vyQkeJ7ewCyNgXciAeRsQhbHarmy234Arymbs6yjwzZ8mqJJrLHMVAeGJFP3r88j6B76TmvvX857VC2sbFQLYp1iXCeiLUbm83a3BEHgoY7V
+  - [image; body, image=https://secure-res.craft.do/v2/HsLVmZmMy9hkUuR8yYrFHMvfLJTYfHtWjmpfhJzsigVPTpyMxu3QJStn6WCMSThvmdSmLqixc4d8UqLbxbF3imVB1q24T4sqv2N5NNyyZkUYLsTjUp98u39JJ1xaeJJB1u6FSicWxpctnktZtVqUBM3AuGyXx3ka8G48KyXUFo76Q9bTN97mcTHRd7oUmHUFR95rmt1WPAUUJzxF42Dh1V9hBJd7KptZdVpPTQbXQa519sAT7gjmiuQzyEVktKcTWzKNGfEzbHm5qThr7H3Nqm22PQzeZfb68apmn7WXtf5XvpEMf8/Image.jpg] https://secure-res.craft.do/v2/HsLVmZmMy9hkUuR8yYrFHMvfLJTYfHtWjmpfhJzsigVPTpyMxu3QJStn6WCMSThvmdSmLqixc4d8UqLbxbF3imVB1q24T4sqv2N5NNyyZkUYLsTjUp98u39JJ1xaeJJB1u6FSicWxpctnktZtVqUBM3AuGyXx3ka8G48KyXUFo76Q9bTN97mcTHRd7oUmHUFR95rmt1WPAUUJzxF42Dh1V9hBJd7KptZdVpPTQbXQa519sAT7gjmiuQzyEVktKcTWzKNGfEzbHm5qThr7H3Nqm22PQzeZfb68apmn7WXtf5XvpEMf8
+  - [image; body, image=https://secure-res.craft.do/v2/HsLVmZmMy9hkUuR8yYrFHMvfLJTYfHtWjmpfhJzsigVPTpyMxu3QJStn6WCMSThvmdSmLqixc4d8UqLbxbF3imVB1q24T4sqv2N5NNyyZkUYLsTjUp98u39JJ1xaeJJB1u6FSicWxpctnktZtVqUBM3AuPpCqmxtbFFLxaRZ61nnChhJz5joZcC5ZxnQWbd56hAccLsgxPUCesmTcio9FsBax5PG5DWpRvHaoXWAfYKRA6E5Ua85Wapf37WgXCqf5HPj8jnmSWTTs4BYVFpgAdK8pZAZ36FV1RjUeZt7WZ3zyaz1Mn/Image.jpg] https://secure-res.craft.do/v2/HsLVmZmMy9hkUuR8yYrFHMvfLJTYfHtWjmpfhJzsigVPTpyMxu3QJStn6WCMSThvmdSmLqixc4d8UqLbxbF3imVB1q24T4sqv2N5NNyyZkUYLsTjUp98u39JJ1xaeJJB1u6FSicWxpctnktZtVqUBM3AuPpCqmxtbFFLxaRZ61nnChhJz5joZcC5ZxnQWbd56hAccLsgxPUCesmTcio9FsBax5PG5DWpRvHaoXWAfYKRA6E5Ua85Wapf37WgXCqf5HPj8jnmSWTTs4BYVFpgAdK8pZAZ36FV1RjUeZt7WZ3zyaz1Mn
+  - [text; body] 
+  - [line; body] 
+  - [line; body] 
+  - [text; subtitle] С чего начать
+  - [text; body, list=numbered] Изучи библиотеки от OpenAI и Anthropic и выбери какого провайдера будешь юзать.
+  - [text; body, list=numbered] Выбери каким ИИ-инструментом будешь пользоваться в разработке. Если уже пользуешься Claude Code или Codex CLI — супер! Если нет — можешь воспользоваться бесплатной моделью Glm-4.6 для Claude Code
+  - [text; body, list=numbered] Гайд по проксированию glm в claude code: https://docs.z.ai/devpack/tool/claude
+  - [text; body] Как установить Claude Code с бесплатной моделью Glm-4.6
+  - [text; body, list=numbered] Установи Claude Code: npm install -g @anthropic-ai/claude-code
+  - [text; body, list=numbered] Создай аккаунт и ключ для модели: https://z.ai/manage-apikey/apikey-list
+  - [text; body, list=numbered] Подключи Glm к Claude Code: npx @z_ai/coding-helper
+  - [text; body] Когда появится запрос, вставь свой API-ключ. Скрипт автоматически настроит Claude Code на использование модели Glm-4.6.
+  - [text; subtitle] Немного о нас
+  - [text; body] У нас AI-инженеры постоянно работают с задачами, где нет готовых решений и полной документации. Приходится экспериментировать и разбираться с незнакомыми API через AI-инструменты.
+  - [text; body] Это задание проверяет не знание конкретных библиотек, а:
+  - [text; body, list=bullet] Умение искать — можешь ли найти и изучить нужное?
+  - [text; body, list=bullet] Архитектурное мышление — понимаешь ли, как строить сложные системы?
+  - [text; body, list=bullet] Работу с AI — как ты используешь Claude/ChatGPT для решения задач?
+  - [text; body, list=bullet] Практику — можешь ли собрать что-то рабочее?
+  - [text; body] Важно: Мы ожидаем, что ты будешь юзать AI-ассистентов по типу Claude, Claude Code, Codex, Cursor. Это не читерство, это и есть работа)
+  - [text; subtitle] Аналог решения
+  - [text; body] У Anthropic есть очень похожий продукт. / Изучи его чтобы понять что мы хотим увидеть: 
+  - [url; body, url=https://claude.ai/chrome] 
+  - [text; subtitle] Полезное
+  - [text; body] Изучи наш курс на менторхабе, он покрывает все детали, которые нужны чтобы выполнить эту задачу 😉
+  - [text; body] Вот также несколько полезных материалов, на которые мы часто ссылаемся:
+  - [url; body, url=https://www.anthropic.com/research/building-effective-agents] https://www.anthropic.com/research/building-effective-agents
+  - [url; body, url=https://www.anthropic.com/engineering/writing-tools-for-agents] 
+  - [url; body, url=https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview] https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
+  - [line; body] 
+  - [text; body] Напоследок: задание правда непростое, потому что работа непростая) / Мы строим системы, для которых часто нет готовых гайдов. Если можешь работать в неопределённости, исследовать и собирать рабочие решения — ты нам подходишь.
+  - [text; body] Удачи! 🚀

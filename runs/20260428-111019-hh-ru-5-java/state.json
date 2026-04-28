@@ -1,0 +1,1890 @@
+{
+  "task": "Открой hh.ru и найди 5 любых вакансий по Java разработке",
+  "run_id": "20260428-111019-hh-ru-5-java",
+  "step": 50,
+  "plan": [
+    {
+      "text": "Understand the requested outcome and constraints.",
+      "status": "done"
+    },
+    {
+      "text": "Observe the current browser state or navigate as needed.",
+      "status": "done"
+    },
+    {
+      "text": "Inspect relevant page information with compact observations/extractions.",
+      "status": "done"
+    },
+    {
+      "text": "Perform low-risk steps toward the task using current refs.",
+      "status": "done"
+    },
+    {
+      "text": "Pause for confirmation before destructive, external, or payment-like actions.",
+      "status": "done"
+    },
+    {
+      "text": "Verify the result and report evidence, gaps, and remaining risks.",
+      "status": "done"
+    }
+  ],
+  "memory": "",
+  "last_observation": {
+    "url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+    "title": "Работа в Санкт-Петербурге, поиск персонала и публикация вакансий - spb.hh.ru",
+    "mode": "visible",
+    "viewport": {
+      "width": 1200,
+      "height": 784
+    },
+    "scroll": {
+      "x": 0,
+      "y": 500,
+      "max_x": 0,
+      "max_y": 19601
+    },
+    "stats": {
+      "links": 327,
+      "buttons": 119,
+      "inputs": 67,
+      "forms": 2,
+      "iframes": 3,
+      "modals": 1,
+      "text_length": 12840,
+      "hidden_suspicious_nodes": 0
+    },
+    "elements": [
+      {
+        "ref": "e1",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "button",
+        "tag": "div",
+        "name": "Сейчас смотрят 13 человек Junior-разработчик 60 000 – 70 000 ₽ за месяц, на руки Без опыта Выплаты: два раза в месяц ООО Бизнес Технологии 4.0 • 29 отзывов Санк",
+        "text": "Сейчас смотрят 13 человек Junior-разработчик 60 000 – 70 000 ₽ за месяц, на руки Без опыта Выплаты: два раза в месяц ООО Бизнес Технологии 4.0 • 29 отзывов Санкт-ПетербургПионерская Откликнуться",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 444.0,
+          "y": -119.0,
+          "width": 648.0,
+          "height": 349.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "main"
+        ],
+        "signature_hash": "112221a483860df5"
+      },
+      {
+        "ref": "e2",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "button",
+        "tag": "div",
+        "name": "Сейчас смотрят 9 человек Разработчик мобильного приложения 180 000 – 250 000 ₽ за месяц, на руки Опыт 1-3 года Можно удалённо Выплаты: два раза в месяц Нмаркет.",
+        "text": "Сейчас смотрят 9 человек Разработчик мобильного приложения 180 000 – 250 000 ₽ за месяц, на руки Опыт 1-3 года Можно удалённо Выплаты: два раза в месяц Нмаркет.ПРО 4.6 • 50 отзывов Санкт-Петербург Откликнуться",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 444.0,
+          "y": 246.0,
+          "width": 648.0,
+          "height": 346.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "main"
+        ],
+        "signature_hash": "071ea3aff90abd5e"
+      },
+      {
+        "ref": "e3",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "button",
+        "tag": "div",
+        "name": "СБЕР 3580 активных вакансий Посмотреть",
+        "text": "СБЕР 3580 активных вакансий Посмотреть",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 444.0,
+          "y": 646.0,
+          "width": 220.0,
+          "height": 207.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div:СБЕР 3580 активных вакансий Посмотреть Альфа-Банк 2775 активных вакансий Посмотреть",
+          "div",
+          "div"
+        ],
+        "signature_hash": "9792f09778eabe4d"
+      },
+      {
+        "ref": "e4",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "button",
+        "tag": "div",
+        "name": "Альфа-Банк 2775 активных вакансий Посмотреть",
+        "text": "Альфа-Банк 2775 активных вакансий Посмотреть",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 680.0,
+          "y": 646.0,
+          "width": 220.0,
+          "height": 207.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div:СБЕР 3580 активных вакансий Посмотреть Альфа-Банк 2775 активных вакансий Посмотреть",
+          "div",
+          "div"
+        ],
+        "signature_hash": "c9de95e338c809ef"
+      },
+      {
+        "ref": "e5",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "button",
+        "tag": "div",
+        "name": "Яндекс 634 активные вакансии Посмотреть",
+        "text": "Яндекс 634 активные вакансии Посмотреть",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 916.0,
+          "y": 646.0,
+          "width": 220.0,
+          "height": 207.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div:Яндекс 634 активные вакансии Посмотреть Дом.ру 346 активных вакансий Посмотреть",
+          "div",
+          "div"
+        ],
+        "signature_hash": "1665ae056aa56a16"
+      },
+      {
+        "ref": "e6",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "button",
+        "tag": "div",
+        "name": "Дом.ру 346 активных вакансий Посмотреть",
+        "text": "Дом.ру 346 активных вакансий Посмотреть",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 1152.0,
+          "y": 646.0,
+          "width": 220.0,
+          "height": 207.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div:Яндекс 634 активные вакансии Посмотреть Дом.ру 346 активных вакансий Посмотреть",
+          "div",
+          "div"
+        ],
+        "signature_hash": "9b5dfafcd54de558"
+      },
+      {
+        "ref": "e7",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": null,
+        "tag": "body",
+        "name": "перейти к поискуперейти к основному контенту Мы используем файлы cookie, чтобы обеспечивать правильную работу нашего веб-сайта и анализировать сетевой трафик. П",
+        "text": "перейти к поискуперейти к основному контенту Мы используем файлы cookie, чтобы обеспечивать правильную работу нашего веб-сайта и анализировать сетевой трафик. Правила использования файлов cookie Понятно Ищу работу Ищу со",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 0.0,
+          "y": -500.0,
+          "width": 1200.0,
+          "height": 20385.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": true,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "html"
+        ],
+        "signature_hash": "dc8036e8205cfdfb"
+      },
+      {
+        "ref": "e8",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "Вакансии на карте",
+        "text": "Вакансии на карте",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/search/vacancy/map",
+        "bbox": {
+          "x": 108.0,
+          "y": 24.0,
+          "width": 228.0,
+          "height": 116.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "e12b6f719d6cdb01"
+      },
+      {
+        "ref": "e9",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "combobox",
+        "tag": "div",
+        "name": "Период выплат",
+        "text": "Период выплат",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 108.0,
+          "y": 372.0,
+          "width": 228.0,
+          "height": 48.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": false,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "408fa868a5910e49"
+      },
+      {
+        "ref": "e10",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "combobox",
+        "tag": "div",
+        "name": "Выберите из списка",
+        "text": "Выберите из списка",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 108.0,
+          "y": 574.0,
+          "width": 228.0,
+          "height": 48.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": false,
+        "parent_chain": [
+          "div",
+          "div",
+          "fieldset",
+          "aside:Уровень дохода"
+        ],
+        "signature_hash": "c23284e038b527ed"
+      },
+      {
+        "ref": "e11",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "button",
+        "tag": "button",
+        "name": "Вакансии на карте",
+        "text": "Вакансии на карте",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "button",
+        "href": null,
+        "bbox": {
+          "x": 121.0,
+          "y": 87.0,
+          "width": 202.0,
+          "height": 40.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "a",
+          "div",
+          "div"
+        ],
+        "signature_hash": "0e1930d62daec4c7"
+      },
+      {
+        "ref": "e12",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "Разработчик мобильного приложения",
+        "text": "Разработчик мобильного приложения",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/vacancy/132479886",
+        "bbox": {
+          "x": 468.0,
+          "y": 308.0,
+          "width": 435.0,
+          "height": 17.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "span",
+          "div",
+          "div:Сейчас смотрят 9 человек Разработчик мобильного приложения 180 000 – 250 000 ₽ за месяц, на руки Опы",
+          "div"
+        ],
+        "signature_hash": "ea5045713739a701"
+      },
+      {
+        "ref": "e13",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "Откликнуться",
+        "text": "Откликнуться",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/applicant/vacancy_response",
+        "bbox": {
+          "x": 468.0,
+          "y": 158.0,
+          "width": 149.0,
+          "height": 48.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div:Откликнуться",
+          "div:Сейчас смотрят 13 человек Junior-разработчик 60 000 – 70 000 ₽ за месяц, на руки Без опыта Выплаты: "
+        ],
+        "signature_hash": "30bdf51d4d4a8d4e"
+      },
+      {
+        "ref": "e14",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "Откликнуться",
+        "text": "Откликнуться",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/applicant/vacancy_response",
+        "bbox": {
+          "x": 468.0,
+          "y": 520.0,
+          "width": 149.0,
+          "height": 48.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div:Откликнуться",
+          "div:Сейчас смотрят 9 человек Разработчик мобильного приложения 180 000 – 250 000 ₽ за месяц, на руки Опы"
+        ],
+        "signature_hash": "a57d22633c17ebff"
+      },
+      {
+        "ref": "e15",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "Создать резюме",
+        "text": "Создать резюме",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/account/signup",
+        "bbox": {
+          "x": 1038.0,
+          "y": 16.0,
+          "width": 146.0,
+          "height": 40.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div:Создать резюме",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "01ecb11c40c5e8a2"
+      },
+      {
+        "ref": "e16",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "Правила использования файлов cookie",
+        "text": "Правила использования файлов cookie",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/article/cookie_policy",
+        "bbox": {
+          "x": 135.0,
+          "y": 751.0,
+          "width": 285.0,
+          "height": 17.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "795d4a64d1ffa22f"
+      },
+      {
+        "ref": "e17",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "textbox",
+        "tag": "input",
+        "name": "Исключить слова, через запятую",
+        "text": null,
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 124.0,
+          "y": 210.0,
+          "width": 196.0,
+          "height": 24.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": false,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "98cbf46572a18258"
+      },
+      {
+        "ref": "e18",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "textbox",
+        "tag": "input",
+        "name": "от",
+        "text": null,
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 124.0,
+          "y": 324.0,
+          "width": 196.0,
+          "height": 24.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": false,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "63191f527fe0f36e"
+      },
+      {
+        "ref": "e19",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "Вакансии Нмаркет.ПРО",
+        "text": null,
+        "placeholder": null,
+        "aria_label": "Вакансии Нмаркет.ПРО",
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/employer/2190230",
+        "bbox": {
+          "x": 1004.0,
+          "y": 418.0,
+          "width": 64.0,
+          "height": 69.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "0b97df09e0f7f57f"
+      },
+      {
+        "ref": "e20",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "button",
+        "tag": "button",
+        "name": "Санкт-Петербург",
+        "text": "Санкт-Петербург",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "button",
+        "href": null,
+        "bbox": {
+          "x": 768.0,
+          "y": 25.0,
+          "width": 165.0,
+          "height": 22.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div:Санкт-Петербург",
+          "div",
+          "div"
+        ],
+        "signature_hash": "70ea144b29e275e8"
+      },
+      {
+        "ref": "e21",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "ООО Бизнес Технологии",
+        "text": "ООО Бизнес Технологии",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/employer/14809",
+        "bbox": {
+          "x": 468.0,
+          "y": 53.0,
+          "width": 178.0,
+          "height": 20.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "180e156317895a19"
+      },
+      {
+        "ref": "e22",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "button",
+        "tag": "button",
+        "name": "Понятно",
+        "text": "Понятно",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "button",
+        "href": null,
+        "bbox": {
+          "x": 977.0,
+          "y": 720.0,
+          "width": 88.0,
+          "height": 40.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "3aea7a6c2cc6f7dc"
+      },
+      {
+        "ref": "e23",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "Войти",
+        "text": "Войти",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/account/login",
+        "bbox": {
+          "x": 957.0,
+          "y": 16.0,
+          "width": 69.0,
+          "height": 40.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div:Войти",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "8db5c21bd29aac61"
+      },
+      {
+        "ref": "e24",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "button",
+        "tag": "button",
+        "name": null,
+        "text": null,
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "button",
+        "href": null,
+        "bbox": {
+          "x": 1126.0,
+          "y": 702.0,
+          "width": 50.0,
+          "height": 50.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "74e4fac5bd26beeb"
+      },
+      {
+        "ref": "e25",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "Нмаркет.ПРО",
+        "text": "Нмаркет.ПРО",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/employer/2190230",
+        "bbox": {
+          "x": 468.0,
+          "y": 418.0,
+          "width": 98.0,
+          "height": 20.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "c096f14b78059865"
+      },
+      {
+        "ref": "e26",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "button",
+        "tag": "button",
+        "name": "Поиск",
+        "text": "Поиск",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "button",
+        "href": null,
+        "bbox": {
+          "x": 668.0,
+          "y": 25.0,
+          "width": 76.0,
+          "height": 22.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "form:Поиск",
+          "div:Поиск",
+          "div"
+        ],
+        "signature_hash": "bfd4c897dad4af3c"
+      },
+      {
+        "ref": "e27",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": null,
+        "text": null,
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/",
+        "bbox": {
+          "x": 16.0,
+          "y": 16.0,
+          "width": 40.0,
+          "height": 40.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "43ade8b8fa9ee880"
+      },
+      {
+        "ref": "e28",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "button",
+        "tag": "button",
+        "name": "Прокрутить вправо",
+        "text": null,
+        "placeholder": null,
+        "aria_label": "Прокрутить вправо",
+        "title": null,
+        "input_type": "button",
+        "href": null,
+        "bbox": {
+          "x": 1052.0,
+          "y": 729.0,
+          "width": 40.0,
+          "height": 40.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "span",
+          "div",
+          "div"
+        ],
+        "signature_hash": "10dcef2124368a38"
+      },
+      {
+        "ref": "e29",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "button",
+        "tag": "button",
+        "name": "Ещё",
+        "text": "Ещё",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "button",
+        "href": null,
+        "bbox": {
+          "x": 369.0,
+          "y": 25.0,
+          "width": 58.0,
+          "height": 22.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div:Ещё",
+          "div",
+          "div"
+        ],
+        "signature_hash": "c406e3d4668df4d9"
+      },
+      {
+        "ref": "e30",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": null,
+        "text": null,
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://feedback.hh.ru/article/details/id/5951",
+        "bbox": {
+          "x": 650.0,
+          "y": 55.0,
+          "width": 16.0,
+          "height": 16.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "409c6cd9b63e7923"
+      },
+      {
+        "ref": "e31",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": null,
+        "text": null,
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://feedback.hh.ru/article/details/id/5951",
+        "bbox": {
+          "x": 570.0,
+          "y": 420.0,
+          "width": 16.0,
+          "height": 16.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "409c6cd9b63e7923"
+      },
+      {
+        "ref": "e32",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": null,
+        "text": null,
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://rating.hh.ru/history/rating2025",
+        "bbox": {
+          "x": 590.0,
+          "y": 420.0,
+          "width": 16.0,
+          "height": 16.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "76fc1b23acbcc0d4"
+      },
+      {
+        "ref": "e33",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "button",
+        "tag": "button",
+        "name": null,
+        "text": null,
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "button",
+        "href": null,
+        "bbox": {
+          "x": 603.0,
+          "y": 611.0,
+          "width": 16.0,
+          "height": 16.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "span",
+          "div",
+          "div"
+        ],
+        "signature_hash": "a4a9f3a32cd68652"
+      },
+      {
+        "ref": "e34",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "listitem",
+        "tag": "div",
+        "name": "СБЕР 3580 активных вакансий Посмотреть Альфа-Банк 2775 активных вакансий Посмотреть",
+        "text": "СБЕР 3580 активных вакансий Посмотреть Альфа-Банк 2775 активных вакансий Посмотреть",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 444.0,
+          "y": 646.0,
+          "width": 456.0,
+          "height": 207.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "964a56d728a6b303"
+      },
+      {
+        "ref": "e35",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "listitem",
+        "tag": "div",
+        "name": "Яндекс 634 активные вакансии Посмотреть Дом.ру 346 активных вакансий Посмотреть",
+        "text": "Яндекс 634 активные вакансии Посмотреть Дом.ру 346 активных вакансий Посмотреть",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 916.0,
+          "y": 646.0,
+          "width": 456.0,
+          "height": 207.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "8be5d8ccc6f92983"
+      },
+      {
+        "ref": "e36",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": null,
+        "tag": "div",
+        "name": "Исключить слова, через запятую",
+        "text": "Исключить слова, через запятую",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 108.0,
+          "y": 198.0,
+          "width": 228.0,
+          "height": 48.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "li:Исключить слова, через запятую",
+          "div",
+          "fieldset",
+          "aside:Уровень дохода"
+        ],
+        "signature_hash": "780ca47200156177"
+      },
+      {
+        "ref": "e37",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": null,
+        "tag": "div",
+        "name": "от",
+        "text": "от",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 108.0,
+          "y": 312.0,
+          "width": 228.0,
+          "height": 48.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "fieldset",
+          "aside:Уровень дохода"
+        ],
+        "signature_hash": "fc0fe33c061a1142"
+      },
+      {
+        "ref": "e38",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": null,
+        "tag": "div",
+        "name": "₽",
+        "text": "₽",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 108.0,
+          "y": 432.0,
+          "width": 228.0,
+          "height": 48.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": false,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "afb095821f9fcb0c"
+      },
+      {
+        "ref": "e39",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": null,
+        "tag": "a",
+        "name": "Сбросить",
+        "text": "Сбросить",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 256.0,
+          "y": 278.0,
+          "width": 80.0,
+          "height": 22.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "fieldset",
+          "aside:Уровень дохода"
+        ],
+        "signature_hash": "9caaad602a32b6ad"
+      },
+      {
+        "ref": "e40",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "radio",
+        "tag": "input",
+        "name": "userTypeSegmentedApplicant",
+        "text": "userTypeSegmentedApplicant",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "radio",
+        "href": null,
+        "bbox": {
+          "x": 84.0,
+          "y": 20.0,
+          "width": 13.0,
+          "height": 13.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": true,
+        "expanded": null,
+        "parent_chain": [
+          "label",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "1237d941c6ff7c48"
+      },
+      {
+        "ref": "e41",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": "radio",
+        "tag": "input",
+        "name": "userTypeSegmentedEmployer",
+        "text": "userTypeSegmentedEmployer",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "radio",
+        "href": null,
+        "bbox": {
+          "x": 197.0,
+          "y": 20.0,
+          "width": 13.0,
+          "height": 13.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": false,
+        "expanded": null,
+        "parent_chain": [
+          "label",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "63356d21aec96c66"
+      },
+      {
+        "ref": "e42",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "frame_name": "",
+        "role": null,
+        "tag": "aside",
+        "name": "Исключить слова Исключить слова Исключить слова, через запятую Уровень дохода Уровень дохода Сбросить от Период выплат ₽ Указан доход 37 Частота выплат Частота ",
+        "text": "Исключить слова Исключить слова Исключить слова, через запятую Уровень дохода Уровень дохода Сбросить от Период выплат ₽ Указан доход 37 Частота выплат Частота выплат Выберите из списка Регион Регион Санкт-Петербург 128 ",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 108.0,
+          "y": 164.0,
+          "width": 228.0,
+          "height": 4010.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "1fbb9e8973f05918"
+      }
+    ],
+    "text_chunks": [
+      "перейти к поискуперейти к основному контенту Мы используем файлы cookie, чтобы обеспечивать правильную работу нашего веб-сайта и анализировать сетевой трафик. Правила использования файлов cookie Понятно Ищу работу Ищу сотрудника Ищу работу Ищу сотрудника Ещё П",
+      "Мы используем файлы cookie, чтобы обеспечивать правильную работу нашего веб-сайта и анализировать сетевой трафик. Правила использования файлов cookie Понятно Ищу работу Ищу сотрудника Ищу работу Ищу сотрудника Ещё Поиск Санкт-Петербург Войти Создать резюме Вак",
+      "Мы используем файлы cookie, чтобы обеспечивать правильную работу нашего веб-сайта и анализировать сетевой трафик. Правила использования файлов cookie Понятно",
+      "Мы используем файлы cookie, чтобы обеспечивать правильную работу нашего веб-сайта и анализировать сетевой трафик. Правила использования файлов cookie",
+      "Ищу работу Ищу сотрудника Ищу работу Ищу сотрудника Ещё Поиск Санкт-Петербург Войти Создать резюме",
+      "Ищу работу Ищу сотрудника Ищу работу Ищу сотрудника",
+      "Ищу работу Ищу сотрудника",
+      "Найдено 128 вакансий «Java разработчик» По соответствию За всё время Вакансии на карте Исключить слова Исключить слова Исключить слова, через запятую Уровень дохода Уровень дохода Сбросить от Период выплат ₽ Указан доход 37 Частота выплат Частота выплат Выбери",
+      "Вакансии на карте Исключить слова Исключить слова Исключить слова, через запятую Уровень дохода Уровень дохода Сбросить от Период выплат ₽ Указан доход 37 Частота выплат Частота выплат Выберите из списка Регион Регион Санкт-Петербург 128 Калининградская област",
+      "Исключить слова Исключить слова Исключить слова, через запятую Уровень дохода Уровень дохода Сбросить от Период выплат ₽ Указан доход 37 Частота выплат Частота выплат Выберите из списка Регион Регион Санкт-Петербург 128 Калининградская область 3 Ленинградская ",
+      "Исключить слова Исключить слова Исключить слова, через запятую",
+      "Исключить слова, через запятую",
+      "Уровень дохода Уровень дохода Сбросить от Период выплат ₽",
+      "Уровень дохода Сбросить",
+      "от Период выплат ₽",
+      "Частота выплат Частота выплат Выберите из списка",
+      "Выберите из списка",
+      "Регион Регион Санкт-Петербург 128 Калининградская область 3 Ленинградская область 2 Новгородская область 1 Республика Карелия 1 Показать все",
+      "Санкт-Петербург 128 Калининградская область 3 Ленинградская область 2 Новгородская область 1 Республика Карелия 1 Показать все",
+      "Санкт-Петербург 128 Калининградская область 3 Ленинградская область 2 Новгородская область 1 Республика Карелия 1",
+      "Санкт-Петербург 128",
+      "Калининградская область 3",
+      "Калининградская область",
+      "Ленинградская область 2",
+      "Ленинградская область",
+      "Сейчас смотрят 13 человек Junior-разработчик 60 000 – 70 000 ₽ за месяц, на руки Без опыта Выплаты: два раза в месяц ООО Бизнес Технологии 4.0 • 29 отзывов Санкт-ПетербургПионерская Откликнуться Сейчас смотрят 9 человек Разработчик мобильного приложения 180 00",
+      "Сейчас смотрят 13 человек Junior-разработчик 60 000 – 70 000 ₽ за месяц, на руки Без опыта Выплаты: два раза в месяц ООО Бизнес Технологии 4.0 • 29 отзывов Санкт-ПетербургПионерская Откликнуться",
+      "Сейчас смотрят 13 человек Junior-разработчик 60 000 – 70 000 ₽ за месяц, на руки Без опыта Выплаты: два раза в месяц ООО Бизнес Технологии 4.0 • 29 отзывов Санкт-ПетербургПионерская",
+      "60 000 – 70 000 ₽ за месяц, на руки Без опыта Выплаты: два раза в месяц",
+      "60 000 – 70 000 ₽ за месяц, на руки",
+      "Выплаты: два раза в месяц",
+      "ООО Бизнес Технологии 4.0 • 29 отзывов Санкт-ПетербургПионерская",
+      "ООО Бизнес Технологии",
+      "Санкт-ПетербургПионерская",
+      "Сейчас смотрят 9 человек Разработчик мобильного приложения 180 000 – 250 000 ₽ за месяц, на руки Опыт 1-3 года Можно удалённо Выплаты: два раза в месяц Нмаркет.ПРО 4.6 • 50 отзывов Санкт-Петербург Откликнуться",
+      "Сейчас смотрят 9 человек Разработчик мобильного приложения 180 000 – 250 000 ₽ за месяц, на руки Опыт 1-3 года Можно удалённо Выплаты: два раза в месяц Нмаркет.ПРО 4.6 • 50 отзывов Санкт-Петербург",
+      "Сейчас смотрят 9 человек",
+      "Разработчик мобильного приложения",
+      "180 000 – 250 000 ₽ за месяц, на руки Опыт 1-3 года Можно удалённо Выплаты: два раза в месяц",
+      "180 000 – 250 000 ₽ за месяц, на руки"
+    ],
+    "tabs": [
+      {
+        "index": 0,
+        "url": "chrome://new-tab-page/",
+        "title": "Новая вкладка",
+        "active": false
+      },
+      {
+        "index": 1,
+        "url": "https://spb.hh.ru/search/vacancy?text=Java+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&area=2&suggestId=b060b570-e397-4be3-9c55-912a801bdf36&hhtmFrom=main&hhtmFromLabel=vacancy_search_line",
+        "title": "Работа в Санкт-Петербурге, поиск персонала и публикация вакансий - spb.hh.ru",
+        "active": true
+      }
+    ],
+    "modal_hints": [
+      "Мы используем файлы cookie, чтобы обеспечивать правильную работу нашего веб-сайта и анализировать сетевой трафик. Правила использования файл"
+    ],
+    "security_warnings": [],
+    "truncated": true,
+    "fingerprint": "1754148c247d4e20a952"
+  },
+  "recent_actions": [
+    {
+      "step": 27,
+      "tool": "query_dom",
+      "args": {
+        "query": "Вакансии Java разработчик список ссылок на вакансии",
+        "limit": 5
+      },
+      "ok": true,
+      "summary": "Found 5 candidate refs for 'Вакансии Java разработчик список ссылок на вакансии'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 28,
+      "tool": "query_dom",
+      "args": {
+        "query": "Java разработчик вакансия ссылка",
+        "limit": 10
+      },
+      "ok": true,
+      "summary": "Found 10 candidate refs for 'Java разработчик вакансия ссылка'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 29,
+      "tool": "observe",
+      "args": {
+        "mode": "visible"
+      },
+      "ok": true,
+      "summary": "Observed 42 elements on 'Работа в Санкт-Петербурге, поиск персонала и публикация вакансий - spb.hh.ru'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 30,
+      "tool": "query_dom",
+      "args": {
+        "query": "Вакансии Java разработчик название ссылка",
+        "limit": 10
+      },
+      "ok": true,
+      "summary": "Found 10 candidate refs for 'Вакансии Java разработчик название ссылка'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 31,
+      "tool": "observe",
+      "args": {
+        "mode": "visible"
+      },
+      "ok": true,
+      "summary": "Observed 42 elements on 'Работа в Санкт-Петербурге, поиск персонала и публикация вакансий - spb.hh.ru'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 32,
+      "tool": "query_dom",
+      "args": {
+        "query": "Java разработчик вакансии ссылки на вакансии с названиями и компаниями",
+        "limit": 10
+      },
+      "ok": true,
+      "summary": "Found 10 candidate refs for 'Java разработчик вакансии ссылки на вакансии с названиями и компаниями'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 33,
+      "tool": "observe",
+      "args": {
+        "mode": "full_light"
+      },
+      "ok": true,
+      "summary": "Observed 160 elements on 'Работа в Санкт-Петербурге, поиск персонала и публикация вакансий - spb.hh.ru'.",
+      "target": null,
+      "page_fingerprint": "6015fd00306a29b94bb1"
+    },
+    {
+      "step": 34,
+      "tool": "extract",
+      "args": {
+        "query": "Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками"
+      },
+      "ok": true,
+      "summary": "Extracted 562 chars for query 'Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками'.",
+      "target": null,
+      "page_fingerprint": "6015fd00306a29b94bb1"
+    },
+    {
+      "step": 35,
+      "tool": "observe",
+      "args": {
+        "mode": "visible"
+      },
+      "ok": true,
+      "summary": "Observed 42 elements on 'Работа в Санкт-Петербурге, поиск персонала и публикация вакансий - spb.hh.ru'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 36,
+      "tool": "extract",
+      "args": {
+        "query": "Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками"
+      },
+      "ok": true,
+      "summary": "Extracted 562 chars for query 'Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 37,
+      "tool": "extract",
+      "args": {
+        "query": "Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками",
+        "scope": "visible"
+      },
+      "ok": true,
+      "summary": "Reused cached extraction 562 chars for query 'Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 38,
+      "tool": "extract",
+      "args": {
+        "query": "Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками",
+        "scope": "visible"
+      },
+      "ok": true,
+      "summary": "Reused cached extraction 562 chars for query 'Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 39,
+      "tool": "query_dom",
+      "args": {
+        "query": "Java разработчик вакансия название ссылка компания",
+        "limit": 10
+      },
+      "ok": true,
+      "summary": "Found 10 candidate refs for 'Java разработчик вакансия название ссылка компания'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 40,
+      "tool": "extract",
+      "args": {
+        "query": "Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками",
+        "scope": "visible"
+      },
+      "ok": true,
+      "summary": "Reused cached extraction 562 chars for query 'Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 41,
+      "tool": "observe",
+      "args": {
+        "mode": "visible"
+      },
+      "ok": true,
+      "summary": "Observed 42 elements on 'Работа в Санкт-Петербурге, поиск персонала и публикация вакансий - spb.hh.ru'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 42,
+      "tool": "extract",
+      "args": {
+        "query": "Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками"
+      },
+      "ok": true,
+      "summary": "Reused cached extraction 562 chars for query 'Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 43,
+      "tool": "query_dom",
+      "args": {
+        "query": "Java разработчик вакансия название компания ссылка",
+        "limit": 10
+      },
+      "ok": true,
+      "summary": "Found 10 candidate refs for 'Java разработчик вакансия название компания ссылка'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 44,
+      "tool": "observe",
+      "args": {
+        "mode": "visible"
+      },
+      "ok": true,
+      "summary": "Observed 42 elements on 'Работа в Санкт-Петербурге, поиск персонала и публикация вакансий - spb.hh.ru'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 45,
+      "tool": "extract",
+      "args": {
+        "query": "Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками"
+      },
+      "ok": true,
+      "summary": "Reused cached extraction 562 chars for query 'Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 46,
+      "tool": "extract",
+      "args": {
+        "query": "Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками",
+        "scope": "visible"
+      },
+      "ok": true,
+      "summary": "Reused cached extraction 562 chars for query 'Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 47,
+      "tool": "extract",
+      "args": {
+        "query": "Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками",
+        "scope": "visible"
+      },
+      "ok": true,
+      "summary": "Reused cached extraction 562 chars for query 'Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 48,
+      "tool": "extract",
+      "args": {
+        "query": "Найди 5 любых вакансий по Java разработке с названиями, компаниями и ссылками",
+        "schema": "{\"type\": \"object\", \"properties\": {\"vacancies\": {\"type\": \"array\", \"items\": {\"type\": \"object\", \"properties\": {\"title\": {\"type\": \"string\"}, \"company\": {\"type\": \"string\"}, \"url\": {\"type\": \"string\"}}}}}}",
+        "scope": "visible"
+      },
+      "ok": false,
+      "summary": "Invalid arguments for extract: [{'type': 'dict_type', 'loc': ('schema',), 'msg': 'Input should be a valid dictionary', 'input': '{\"type\": \"object\", \"properties\": {\"vacancies\": {\"type\": \"array\", \"items\": {\"type\": \"object\", \"properties\": {\"title\": {\"type\": \"string\"}, \"company\": {\"type\": \"string\"}, \"url\": {\"type\": \"string\"}}}}}}', 'url': 'https://errors.pydantic.dev/2.13/v/dict_type'}]",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 49,
+      "tool": "observe",
+      "args": {
+        "mode": "visible"
+      },
+      "ok": true,
+      "summary": "Observed 42 elements on 'Работа в Санкт-Петербурге, поиск персонала и публикация вакансий - spb.hh.ru'.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    },
+    {
+      "step": 50,
+      "tool": "done",
+      "args": {
+        "success": false,
+        "summary": "Task incomplete due to tool validation errors preventing extraction of vacancy data. The agent failed to retrieve the required 5 Java developer vacancies with names, companies, and links because the `extract` tool repeatedly rejected the schema definition (Input should be a valid dictionary). Only 1 step remains in the budget, but without a working extraction method or user input to clarify the expected output format, the task cannot be completed successfully.",
+        "evidence": [
+          "Step 48 extract failed: Invalid arguments for extract - Input should be a valid dictionary",
+          "Recent actions show repeated failures on extract tool (steps 11, 19, 21, 48)",
+          "Current page is hh.ru search results for Java разработчик в Санкт-Петербурге",
+          "No successful extraction of vacancy titles, companies, or URLs achieved"
+        ],
+        "remaining_risks": [
+          "Tool validation error prevents structured data extraction",
+          "Only 1 step remaining in budget",
+          "Cannot verify if cached extractions contain valid Java vacancy data due to previous failures"
+        ]
+      },
+      "ok": true,
+      "summary": "Task incomplete due to tool validation errors preventing extraction of vacancy data. The agent failed to retrieve the required 5 Java developer vacancies with names, companies, and links because the `extract` tool repeatedly rejected the schema definition (Input should be a valid dictionary). Only 1 step remains in the budget, but without a working extraction method or user input to clarify the expected output format, the task cannot be completed successfully.",
+      "target": null,
+      "page_fingerprint": "1754148c247d4e20a952"
+    }
+  ],
+  "failures": [
+    {
+      "step": 11,
+      "tool": "extract",
+      "error_class": "tool_validation_error",
+      "message": "Invalid arguments for extract: [{'type': 'dict_type', 'loc': ('schema',), 'msg': 'Input should be a valid dictionary', 'input': '{\"vacancies\": {\"type\": \"array\", \"items\": {\"type\": \"object\", \"properties\": {\"title\": {\"type\": \"string\"}, \"company\": {\"type\": \"string\"}, \"salary\": {\"type\": \"string\"}, \"url\": {\"type\": \"string\"}}}}}', 'url': 'https://errors.pydantic.dev/2.13/v/dict_type'}]",
+      "recovery": "Inspect the latest state and choose a recovery action."
+    },
+    {
+      "step": 19,
+      "tool": "extract",
+      "error_class": "tool_validation_error",
+      "message": "Invalid arguments for extract: [{'type': 'dict_type', 'loc': ('schema',), 'msg': 'Input should be a valid dictionary', 'input': '{\"type\": \"array\", \"items\": {\"type\": \"object\", \"properties\": {\"title\": {\"type\": \"string\"}, \"company\": {\"type\": \"string\"}, \"salary\": {\"type\": \"string\"}, \"url\": {\"type\": \"string\"}}}}', 'url': 'https://errors.pydantic.dev/2.13/v/dict_type'}]",
+      "recovery": "Inspect the latest state and choose a recovery action."
+    },
+    {
+      "step": 21,
+      "tool": "extract",
+      "error_class": "tool_validation_error",
+      "message": "Invalid arguments for extract: [{'type': 'dict_type', 'loc': ('schema',), 'msg': 'Input should be a valid dictionary', 'input': '{\"type\": \"array\", \"items\": {\"type\": \"object\", \"properties\": {\"title\": {\"type\": \"string\"}, \"company\": {\"type\": \"string\"}, \"url\": {\"type\": \"string\"}}}', 'url': 'https://errors.pydantic.dev/2.13/v/dict_type'}]",
+      "recovery": "Inspect the latest state and choose a recovery action."
+    },
+    {
+      "step": 48,
+      "tool": "extract",
+      "error_class": "tool_validation_error",
+      "message": "Invalid arguments for extract: [{'type': 'dict_type', 'loc': ('schema',), 'msg': 'Input should be a valid dictionary', 'input': '{\"type\": \"object\", \"properties\": {\"vacancies\": {\"type\": \"array\", \"items\": {\"type\": \"object\", \"properties\": {\"title\": {\"type\": \"string\"}, \"company\": {\"type\": \"string\"}, \"url\": {\"type\": \"string\"}}}}}}', 'url': 'https://errors.pydantic.dev/2.13/v/dict_type'}]",
+      "recovery": "Inspect the latest state and choose a recovery action."
+    }
+  ],
+  "artifacts": [
+    {
+      "kind": "failure_screenshot",
+      "path": "runs/20260428-111019-hh-ru-5-java/screenshots/0001-annotated.png",
+      "note": "step 11 extract"
+    },
+    {
+      "kind": "failure_screenshot",
+      "path": "runs/20260428-111019-hh-ru-5-java/screenshots/0002-annotated.png",
+      "note": "step 19 extract"
+    },
+    {
+      "kind": "failure_screenshot",
+      "path": "runs/20260428-111019-hh-ru-5-java/screenshots/0003-annotated.png",
+      "note": "step 21 extract"
+    },
+    {
+      "kind": "failure_screenshot",
+      "path": "runs/20260428-111019-hh-ru-5-java/screenshots/0004-annotated.png",
+      "note": "step 48 extract"
+    }
+  ],
+  "pending_confirmation": null
+}

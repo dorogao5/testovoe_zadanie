@@ -1,0 +1,943 @@
+{
+  "task": "Открой hh.ru и найди 5 любых вакансий по стройке",
+  "run_id": "20260428-120817-hh-ru-5",
+  "step": 2,
+  "plan": [
+    {
+      "text": "Understand the requested outcome and constraints.",
+      "status": "done"
+    },
+    {
+      "text": "Observe the current browser state or navigate as needed.",
+      "status": "done"
+    },
+    {
+      "text": "Inspect relevant page information with compact observations/extractions.",
+      "status": "current"
+    },
+    {
+      "text": "Perform low-risk steps toward the task using current refs.",
+      "status": "pending"
+    },
+    {
+      "text": "Pause for confirmation before destructive, external, or payment-like actions.",
+      "status": "pending"
+    },
+    {
+      "text": "Verify the result and report evidence, gaps, and remaining risks.",
+      "status": "pending"
+    }
+  ],
+  "memory": "",
+  "last_observation": {
+    "url": "https://spb.hh.ru/",
+    "title": "Работа в Санкт-Петербурге, поиск персонала и публикация вакансий - spb.hh.ru",
+    "mode": "visible",
+    "viewport": {
+      "width": 1200,
+      "height": 784
+    },
+    "scroll": {
+      "x": 0,
+      "y": 0,
+      "max_x": 0,
+      "max_y": 6007
+    },
+    "stats": {
+      "links": 166,
+      "buttons": 63,
+      "inputs": 12,
+      "forms": 2,
+      "iframes": 4,
+      "modals": 1,
+      "text_length": 8088,
+      "hidden_suspicious_nodes": 0
+    },
+    "elements": [
+      {
+        "ref": "e1",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": null,
+        "tag": "body",
+        "name": "перейти к поиску Чтобы сайт был удобнее, используем cookies Понятно Ищу работу Ищу сотрудника Ищу работу Ищу сотрудника Ещё Санкт-Петербург Войти Создать резюме",
+        "text": "перейти к поиску Чтобы сайт был удобнее, используем cookies Понятно Ищу работу Ищу сотрудника Ищу работу Ищу сотрудника Ещё Санкт-Петербург Войти Создать резюме Напишите телефон, чтобы работодатели могли предложить вам р",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1200.0,
+          "height": 6791.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": true,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "html"
+        ],
+        "signature_hash": "379aed1a69a69798"
+      },
+      {
+        "ref": "e2",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "textbox",
+        "tag": "input",
+        "name": "Поиск по вакансиям",
+        "text": null,
+        "placeholder": null,
+        "aria_label": "Поиск по вакансиям",
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 120.0,
+          "y": 720.0,
+          "width": 676.0,
+          "height": 24.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": false,
+        "expanded": false,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "ccf66b9b510819bf"
+      },
+      {
+        "ref": "e3",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "textbox",
+        "tag": "input",
+        "name": "Номер телефона",
+        "text": null,
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "text",
+        "href": null,
+        "bbox": {
+          "x": 124.0,
+          "y": 342.0,
+          "width": 454.0,
+          "height": 24.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": false,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "8bad95ff440c82a7"
+      },
+      {
+        "ref": "e4",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "button",
+        "tag": "button",
+        "name": "Найти",
+        "text": "Найти",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "submit",
+        "href": null,
+        "bbox": {
+          "x": 884.0,
+          "y": 708.0,
+          "width": 208.0,
+          "height": 48.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "form:Профессия, должность или компания Найти",
+          "div"
+        ],
+        "signature_hash": "5dbcffeca52392ad"
+      },
+      {
+        "ref": "e5",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "button",
+        "tag": "button",
+        "name": "Продолжить",
+        "text": "Продолжить",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "submit",
+        "href": null,
+        "bbox": {
+          "x": 610.0,
+          "y": 326.0,
+          "width": 146.0,
+          "height": 56.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "3e309b33bf2d17dd"
+      },
+      {
+        "ref": "e6",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "Создать резюме",
+        "text": "Создать резюме",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/account/signup",
+        "bbox": {
+          "x": 1038.0,
+          "y": 16.0,
+          "width": 146.0,
+          "height": 40.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div:Создать резюме",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "01ecb11c40c5e8a2"
+      },
+      {
+        "ref": "e7",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": null,
+        "text": null,
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/mobile",
+        "bbox": {
+          "x": 652.0,
+          "y": 528.0,
+          "width": 140.0,
+          "height": 40.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "2c42c100eb4d56c6"
+      },
+      {
+        "ref": "e8",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": null,
+        "text": null,
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/mobile",
+        "bbox": {
+          "x": 802.0,
+          "y": 528.0,
+          "width": 140.0,
+          "height": 40.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "2c42c100eb4d56c6"
+      },
+      {
+        "ref": "e9",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": null,
+        "text": null,
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/mobile",
+        "bbox": {
+          "x": 952.0,
+          "y": 528.0,
+          "width": 140.0,
+          "height": 40.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "2c42c100eb4d56c6"
+      },
+      {
+        "ref": "e10",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "политику конфиденциальности",
+        "text": "политику конфиденциальности",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/article/personal_data",
+        "bbox": {
+          "x": 421.0,
+          "y": 410.0,
+          "width": 232.0,
+          "height": 17.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "5dd396d2e35c7e1b"
+      },
+      {
+        "ref": "e11",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "button",
+        "tag": "button",
+        "name": "Санкт-Петербург",
+        "text": "Санкт-Петербург",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "button",
+        "href": null,
+        "bbox": {
+          "x": 768.0,
+          "y": 25.0,
+          "width": 165.0,
+          "height": 22.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div:Санкт-Петербург",
+          "div",
+          "div"
+        ],
+        "signature_hash": "70ea144b29e275e8"
+      },
+      {
+        "ref": "e12",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "button",
+        "tag": "button",
+        "name": "Понятно",
+        "text": "Понятно",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "button",
+        "href": null,
+        "bbox": {
+          "x": 758.0,
+          "y": 728.0,
+          "width": 87.0,
+          "height": 40.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "body"
+        ],
+        "signature_hash": "76fc149ef86178a7"
+      },
+      {
+        "ref": "e13",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "Я ищу сотрудника",
+        "text": "Я ищу сотрудника",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/employer",
+        "bbox": {
+          "x": 108.0,
+          "y": 772.0,
+          "width": 148.0,
+          "height": 22.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "de7eab66033b70a1"
+      },
+      {
+        "ref": "e14",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "Войти",
+        "text": "Войти",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/account/login",
+        "bbox": {
+          "x": 957.0,
+          "y": 16.0,
+          "width": 69.0,
+          "height": 40.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div:Войти",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "8db5c21bd29aac61"
+      },
+      {
+        "ref": "e15",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": null,
+        "text": null,
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/search/vacancy/advanced",
+        "bbox": {
+          "x": 824.0,
+          "y": 708.0,
+          "width": 48.0,
+          "height": 48.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "form:Профессия, должность или компания Найти",
+          "div"
+        ],
+        "signature_hash": "e337fd10a2c5f644"
+      },
+      {
+        "ref": "e16",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "перейти к поиску",
+        "text": "перейти к поиску",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/",
+        "bbox": {
+          "x": 0.0,
+          "y": 2.0,
+          "width": 126.0,
+          "height": 17.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "body",
+          "html"
+        ],
+        "signature_hash": "ccf750565fe851bf"
+      },
+      {
+        "ref": "e17",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": null,
+        "text": null,
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/",
+        "bbox": {
+          "x": 16.0,
+          "y": 16.0,
+          "width": 40.0,
+          "height": 40.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "43ade8b8fa9ee880"
+      },
+      {
+        "ref": "e18",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "соглашение",
+        "text": "соглашение",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/account/agreement",
+        "bbox": {
+          "x": 316.0,
+          "y": 410.0,
+          "width": 89.0,
+          "height": 17.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "34fcfb708a0579cc"
+      },
+      {
+        "ref": "e19",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "button",
+        "tag": "button",
+        "name": "Ещё",
+        "text": "Ещё",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "button",
+        "href": null,
+        "bbox": {
+          "x": 369.0,
+          "y": 25.0,
+          "width": 58.0,
+          "height": 22.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div:Ещё",
+          "div",
+          "div"
+        ],
+        "signature_hash": "c406e3d4668df4d9"
+      },
+      {
+        "ref": "e20",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "link",
+        "tag": "a",
+        "name": "cookies",
+        "text": "cookies",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": "https://spb.hh.ru/article/cookie_policy",
+        "bbox": {
+          "x": 672.0,
+          "y": 738.0,
+          "width": 62.0,
+          "height": 20.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "span",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "fca11d0ad8133b38"
+      },
+      {
+        "ref": "e21",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": null,
+        "tag": "div",
+        "name": "Профессия, должность или компания",
+        "text": "Профессия, должность или компания",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 108.0,
+          "y": 708.0,
+          "width": 704.0,
+          "height": 48.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "form:Профессия, должность или компания Найти"
+        ],
+        "signature_hash": "3da77ecb3e7dad28"
+      },
+      {
+        "ref": "e22",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": null,
+        "tag": "div",
+        "name": "Номер телефона",
+        "text": "Номер телефона",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": null,
+        "href": null,
+        "bbox": {
+          "x": 108.0,
+          "y": 326.0,
+          "width": 490.0,
+          "height": 56.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": null,
+        "expanded": null,
+        "parent_chain": [
+          "div",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "f0e180185deca288"
+      },
+      {
+        "ref": "e23",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "radio",
+        "tag": "input",
+        "name": "userTypeSegmentedApplicant",
+        "text": "userTypeSegmentedApplicant",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "radio",
+        "href": null,
+        "bbox": {
+          "x": 84.0,
+          "y": 20.0,
+          "width": 13.0,
+          "height": 13.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": true,
+        "expanded": null,
+        "parent_chain": [
+          "label",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "1237d941c6ff7c48"
+      },
+      {
+        "ref": "e24",
+        "frame_index": 0,
+        "frame_url": "https://spb.hh.ru/",
+        "frame_name": "",
+        "role": "radio",
+        "tag": "input",
+        "name": "userTypeSegmentedEmployer",
+        "text": "userTypeSegmentedEmployer",
+        "placeholder": null,
+        "aria_label": null,
+        "title": null,
+        "input_type": "radio",
+        "href": null,
+        "bbox": {
+          "x": 197.0,
+          "y": 20.0,
+          "width": 13.0,
+          "height": 13.0
+        },
+        "visible": true,
+        "in_viewport": true,
+        "enabled": true,
+        "focused": false,
+        "checked": false,
+        "expanded": null,
+        "parent_chain": [
+          "label",
+          "div",
+          "div",
+          "div"
+        ],
+        "signature_hash": "63356d21aec96c66"
+      }
+    ],
+    "text_chunks": [
+      "перейти к поиску Чтобы сайт был удобнее, используем cookies Понятно Ищу работу Ищу сотрудника Ищу работу Ищу сотрудника Ещё Санкт-Петербург Войти Создать резюме Напишите телефон, чтобы работодатели могли предложить вам работу Номер телефона Продолжить Продолжа",
+      "Чтобы сайт был удобнее, используем cookies Понятно Ищу работу Ищу сотрудника Ищу работу Ищу сотрудника Ещё Санкт-Петербург Войти Создать резюме Напишите телефон, чтобы работодатели могли предложить вам работу Номер телефона Продолжить Продолжая, вы принимаете ",
+      "Чтобы сайт был удобнее, используем cookies Понятно",
+      "Чтобы сайт был удобнее, используем cookies",
+      "Ищу работу Ищу сотрудника Ищу работу Ищу сотрудника Ещё Санкт-Петербург Войти Создать резюме",
+      "Ищу работу Ищу сотрудника Ищу работу Ищу сотрудника",
+      "Ищу работу Ищу сотрудника",
+      "Напишите телефон, чтобы работодатели могли предложить вам работу Номер телефона Продолжить Продолжая, вы принимаете соглашение и политику конфиденциальности 86 328 791 резюме 920 936 вакансий 2 352 717 компаний Поиск работы в Санкт-Петербурге Профессия, должно",
+      "Напишите телефон, чтобы работодатели могли предложить вам работу Номер телефона Продолжить Продолжая, вы принимаете соглашение и политику конфиденциальности 86 328 791 резюме 920 936 вакансий 2 352 717 компаний",
+      "Напишите телефон, чтобы работодатели могли предложить вам работу Номер телефона Продолжить Продолжая, вы принимаете соглашение и политику конфиденциальности",
+      "Напишите телефон, чтобы работодатели могли предложить вам работу",
+      "Номер телефона Продолжить Продолжая, вы принимаете соглашение и политику конфиденциальности",
+      "Номер телефона Продолжить",
+      "Продолжая, вы принимаете соглашение и политику конфиденциальности",
+      "политику конфиденциальности",
+      "86 328 791 резюме 920 936 вакансий 2 352 717 компаний",
+      "2 352 717 компаний",
+      "Поиск работы в Санкт-Петербурге Профессия, должность или компания Найти Я ищу сотрудника Популярное Вакансии дня до 125 000 ₽ 14 вакансий Компании дня 1462 вакансии Работа из дома 43127 вакансий Подработка до 350 000 ₽ 17143 вакансии Курьер 5 000 – 305 000 ₽ 1",
+      "Поиск работы в Санкт-Петербурге Профессия, должность или компания Найти Я ищу сотрудника",
+      "Поиск работы в Санкт-Петербурге",
+      "Профессия, должность или компания Найти",
+      "Профессия, должность или компания"
+    ],
+    "tabs": [
+      {
+        "index": 0,
+        "url": "chrome://new-tab-page/",
+        "title": "Новая вкладка",
+        "active": false
+      },
+      {
+        "index": 1,
+        "url": "https://spb.hh.ru/",
+        "title": "Работа в Санкт-Петербурге, поиск персонала и публикация вакансий - spb.hh.ru",
+        "active": true
+      }
+    ],
+    "modal_hints": [
+      "Чтобы сайт был удобнее, используем cookies Понятно"
+    ],
+    "security_warnings": [],
+    "truncated": true,
+    "fingerprint": "c8d6f58b736ad69037a3"
+  },
+  "recent_actions": [
+    {
+      "step": 1,
+      "tool": "observe",
+      "args": {
+        "mode": "visible"
+      },
+      "ok": true,
+      "summary": "Observed 24 elements on 'Работа в Санкт-Петербурге, поиск персонала и публикация вакансий - spb.hh.ru'.",
+      "target": null,
+      "page_fingerprint": "c8d6f58b736ad69037a3"
+    },
+    {
+      "step": 2,
+      "tool": "query_dom",
+      "args": {
+        "query": "вакансии по стройке",
+        "limit": 5
+      },
+      "ok": true,
+      "summary": "Found 5 candidate refs for 'вакансии по стройке'.",
+      "target": null,
+      "page_fingerprint": "c8d6f58b736ad69037a3"
+    }
+  ],
+  "failures": [],
+  "artifacts": [],
+  "pending_confirmation": null
+}
